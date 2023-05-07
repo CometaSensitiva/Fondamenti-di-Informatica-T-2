@@ -1,0 +1,10 @@
+package esempio3;
+
+public interface TriangleRectangle extends Triangle {
+	
+	public double getCatete1();
+	
+	public double getCatete2();
+	
+	public double getCatete3()
+}

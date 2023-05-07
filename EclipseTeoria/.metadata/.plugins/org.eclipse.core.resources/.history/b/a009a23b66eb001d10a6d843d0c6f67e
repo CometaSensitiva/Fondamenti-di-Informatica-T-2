@@ -1,0 +1,12 @@
+package esempio8;
+
+public class CounterDescendingComparator implements Comparable<Counter> {
+	public int compare(Counter a, Counter b) {
+		if (a.getValue() < b.getValue())
+			return 1;
+		if (a.getValue() > b.getValue())
+			return -1;
+		else
+			return 0;
+	}
+}

@@ -1,0 +1,28 @@
+package esempio3;
+
+public class ImplTriangleIsosceles extends ImplTriangle implements TriangleIsosceles {
+
+	public ImplTriangleIsosceles(double base, double sides) {
+		super(base, sides, sides);
+	}
+
+	@Override
+	public double getBase() {
+		return getSide1();
+	}
+
+	@Override
+	public double getSide() {
+		return getSide2();
+	}
+	
+	@Override
+	public String getName() {
+		return "A Triangle Isosceles";
+	}
+	
+	public String toString() {
+		super.toString();
+	}
+	
+}

@@ -1,0 +1,37 @@
+package esempio7;
+
+/**
+ * 
+ * The Main7 class tests the Counter class by creating two Counter objects, c1
+ * and c2, and performing comparison operations on them.
+ */
+public class Main7 {
+
+	/**
+	 * 
+	 * The main method creates two Counter objects, c1 and c2, and performs
+	 * comparison operations on them.
+	 * 
+	 * @param args an array of command-line arguments for the application
+	 */
+	public static void main(String[] args) {
+		Counter c1 = new Counter(10);
+		Counter c2 = new Counter(10);
+
+// Compares c1 with c2 using compareTo method and prints the result
+		System.out.println("c1 vs c2 : " + c1.compareTo(c2));
+
+// Compares if c1 is equal to c2 using equals method and prints the result
+		System.out.println("c1 == c2 : " + c1.equals(c2));
+
+// Increments c1 and compares it with c2 using compareTo method and prints the result
+		c1.inc();
+		System.out.println("c1 vs c2 : " + c1.compareTo(c2));
+
+// Compares c2 with c1 using compareTo method and prints the result
+		System.out.println("c2 vs c1 : " + c2.compareTo(c1));
+
+// Compares if c1 is equal to c2 using equals method and prints the result
+		System.out.println("c1 == c2 : " + c1.equals(c2));
+	}
+}

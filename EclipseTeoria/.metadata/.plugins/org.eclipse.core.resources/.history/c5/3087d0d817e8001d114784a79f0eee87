@@ -1,0 +1,6 @@
+package esempio1;
+
+public interface Rettangolo {
+	public double altezza();
+	public double base();
+}

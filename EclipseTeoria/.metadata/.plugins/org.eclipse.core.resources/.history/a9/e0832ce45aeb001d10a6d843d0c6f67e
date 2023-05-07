@@ -1,0 +1,17 @@
+package esempio5;
+
+public interface Real extends Complex {
+	public static Real of(double x) {
+		return new ImplReal(x);
+	}
+
+	public Real sum(Real x);
+
+	public Real sub(Real x);
+
+	public Real mul(Real x);
+
+	public Real div(Real x);
+
+	public String toString();
+}

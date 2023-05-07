@@ -1,0 +1,13 @@
+package esempio1;
+
+public abstract class AnimaleTerretre extends Animale {
+
+	
+	public abstract String siMuove() ;
+
+	@Override
+	public String vive() {
+		return "Sulla terra ferma";
+	}
+
+}

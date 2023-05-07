@@ -1,0 +1,56 @@
+package esempio3;
+
+/**
+ * A class representing an isosceles triangle shape. This class extends the
+ * 'Triangolo' class and overrides the 'nome' method to return the name of the
+ * isosceles triangle shape.
+ */
+public class TriangoloIsoscele extends Triangolo {
+
+	/**
+	 * Constructs an isosceles triangle with the given base and equal sides.
+	 * 
+	 * @param base The length of the base of the isosceles triangle.
+	 * @param lato The length of the equal sides of the isosceles triangle.
+	 */
+	public TriangoloIsoscele(double base, double lato) {
+		super(base, lato, lato);
+	}
+
+	/**
+	 * Returns the length of the base of the isosceles triangle.
+	 * 
+	 * @return The length of the base of the isosceles triangle.
+	 */
+	public double getBase() {
+		return getLatoA();
+	}
+
+	/**
+	 * Returns the length of the first equal side of the isosceles triangle.
+	 * 
+	 * @return The length of the first equal side of the isosceles triangle.
+	 */
+	public double getLato1() {
+		return getLatoB();
+	}
+
+	/**
+	 * Returns the length of the second equal side of the isosceles triangle.
+	 * 
+	 * @return The length of the second equal side of the isosceles triangle.
+	 */
+	public double getLato2() {
+		return getLatoC();
+	}
+
+	/**
+	 * Returns the name of the isosceles triangle shape.
+	 * 
+	 * @return The name of the isosceles triangle shape.
+	 */
+	@Override
+	public String nome() {
+		return "Triangolo isoscele";
+	}
+}

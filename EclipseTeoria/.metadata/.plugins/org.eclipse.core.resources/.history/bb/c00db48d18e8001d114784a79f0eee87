@@ -1,0 +1,21 @@
+package esempio1;
+
+public class ImplRettangolo implements Rettangolo {
+	private double lato1, lato2;
+
+	public ImplRettangolo(double altezza, double base) {
+		this.lato1 = base;
+		this.lato2 = altezza;
+	}
+
+	@Override
+	public double altezza() {
+		return lato2;
+	}
+
+	@Override
+	public double base() {
+		return lato1;
+	}
+
+}

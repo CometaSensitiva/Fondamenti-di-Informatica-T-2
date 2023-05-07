@@ -1,0 +1,24 @@
+package myfitnessdiary.controller;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
+import myfitnessdiary.model.FitnessDiary;
+import myfitnessdiary.persistence.ReportWriter;
+
+public class MyController extends Controller {
+
+	DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+
+	public MyController(FitnessDiary diary, ActivitiesRepository repository, ReportWriter reportWriter) {
+		super(diary, repository, reportWriter);
+	}
+
+	@Override
+	public String getDayWorkout(LocalDate data) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

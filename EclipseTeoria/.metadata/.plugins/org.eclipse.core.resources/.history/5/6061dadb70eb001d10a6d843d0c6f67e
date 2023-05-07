@@ -1,0 +1,14 @@
+package esempio9;
+
+import java.util.Comparator;
+
+public class Main9 {
+
+	public static void main(String[] args) {
+		Comparator<Persona> cmp1 = new PersonaCognomeCognomeAlphabeticalComparator();
+		Comparator<Persona> cmp2 = new PersonaNomeAlphabeticalComparator();
+		Comparator<Persona> cmp3 = new PersonaEtaAscendingComparator();
+
+	}
+
+}

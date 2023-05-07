@@ -1,0 +1,27 @@
+package esempio4;
+
+
+public interface Complex {
+	
+
+	public float getRealPart();
+
+	public float getImPart();
+
+	public Complex sum(Complex that);
+
+	public Complex sub(Complex that);
+
+	public Complex mul();
+
+	public Complex div();
+
+	public Complex cgt();
+
+	public Complex divByFactor();
+
+	public float squaredModule();
+
+	public String toString();
+
+}

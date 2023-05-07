@@ -1,0 +1,13 @@
+package esempio6;
+
+import java.time.LocalDateTime;
+
+interface Persona {
+	public String cognome();
+
+	public String nome();
+
+	public LocalDateTime dataDiNascita();
+
+	public String luogoDiNascita();
+}

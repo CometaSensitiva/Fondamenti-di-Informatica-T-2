@@ -1,0 +1,7 @@
+package esempio3;
+
+public interface Triangolo {
+	public double area();
+	public double perimeter();
+	public double altezza();
+}

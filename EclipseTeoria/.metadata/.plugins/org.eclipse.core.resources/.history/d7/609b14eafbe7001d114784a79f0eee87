@@ -1,0 +1,17 @@
+package esempio2;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		// create some animal objects
+		AnimaleTerrestre elefante = new Elefante("Dumbo");
+		AnimaleAcquatico squalo = new Squalo("Bruce");
+		PesceDiMare pesce = new Tonno("Nemo");
+
+		Animale[] zoo = { elefante, squalo, pesce };
+		for (Animale x : zoo) {
+			x.mostra();
+		}
+	}
+
+}

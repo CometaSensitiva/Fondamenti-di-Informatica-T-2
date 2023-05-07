@@ -1,0 +1,19 @@
+package esempio2;
+
+public abstract class PesceDiMare extends AnimaleMarino {
+
+	protected PesceDiMare(String s) {
+		super(s);
+	}
+
+	@Override
+	public String nome() {
+		return "un pesce di mare";
+	}
+
+	@Override
+	public String siMuove() {
+		return "nuotando";
+	}
+
+}

@@ -1,0 +1,8 @@
+package esempio2;
+
+public abstract class Squalo extends PesceDiMare {
+	public Squalo(String s) {
+		super(s);
+		verso = "fa splash splash";
+	}
+}

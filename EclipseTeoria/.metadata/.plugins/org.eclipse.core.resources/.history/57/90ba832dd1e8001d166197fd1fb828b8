@@ -1,0 +1,5 @@
+package esempio3;
+
+public interface TriangleRectangle extends Triangle {
+
+}

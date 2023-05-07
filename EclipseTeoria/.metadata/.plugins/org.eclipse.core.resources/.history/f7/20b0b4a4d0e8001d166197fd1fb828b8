@@ -1,0 +1,8 @@
+package esempio3;
+
+public interface TriangleEquilateral extends TriangleIsosceles {
+
+	public static TriangleEquilateral of(double side) {
+		return new ImplTriangleEquilateral(side);
+	}
+}

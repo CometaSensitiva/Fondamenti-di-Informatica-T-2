@@ -1,0 +1,57 @@
+package myfitnessdiary.model;
+
+import java.time.LocalDate;
+
+public class Workout {
+	private Activity activity;
+	private LocalDate date;
+	private int duration;
+	private Intensity intensity;
+
+	public Workout(LocalDate date, int duration, Intensity intensity, Activity activity) {
+		if (date == null)
+			throw new IllegalArgumentException("data errata");
+		if (duration <= 0)
+			throw new IllegalArgumentException("durata errata");
+		if (intensity == null)
+			throw new IllegalArgumentException("intensità errata");
+		if (activity == null)
+			throw new IllegalArgumentException("attività errata");
+		this.date = date;
+		this.duration = duration;
+		this.intensity = intensity;
+		this.activity = activity;
+	}
+
+	/**
+	 * @return the activity
+	 */
+	public Activity getActivity() {
+		return activity;
+	}
+
+	/**
+	 * @return the date
+	 */
+	public LocalDate getDate() {
+		return date;
+	}
+
+	/**
+	 * @return the duration
+	 */
+	public int getDuration() {
+		return duration;
+	}
+
+	/**
+	 * @return the intensity
+	 */
+	public Intensity getIntensity() {
+		return intensity;
+	}
+
+	public int getBurnedCalories() {
+
+	}
+}

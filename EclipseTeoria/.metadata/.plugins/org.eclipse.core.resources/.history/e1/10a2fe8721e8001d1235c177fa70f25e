@@ -1,0 +1,24 @@
+package esempio2;
+
+public class Tavolo implements Rettangolare {
+	
+	private double larghezza,lunghezza,altezza;
+	
+	public Tavolo( double larghezza, double lunghezza, double altezza) {
+		this.larghezza=larghezza;
+		this.lunghezza=lunghezza;
+		this.altezza=altezza;
+	}
+
+	@Override
+	public double larghezza() {
+		
+	}
+
+	@Override
+	public double lunghezza() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

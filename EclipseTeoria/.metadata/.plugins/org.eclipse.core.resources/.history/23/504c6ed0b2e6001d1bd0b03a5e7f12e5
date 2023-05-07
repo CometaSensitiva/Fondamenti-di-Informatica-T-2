@@ -1,0 +1,16 @@
+package esempio1;
+
+public abstract class AnimaleTerretre extends Animale {
+
+	@Override
+	public abstract String siMuove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String vive() {
+		return "Sulla terra ferma";
+	}
+
+}

@@ -1,0 +1,10 @@
+package esempio9;
+
+import java.text.Normalizer;
+
+public class PersonaEtaAscendingComparator {
+	@Override
+	public int compare(Persona p1, Persona p2) {
+		return Integer.compare(p1.eta(), p2.eta());
+	}
+}

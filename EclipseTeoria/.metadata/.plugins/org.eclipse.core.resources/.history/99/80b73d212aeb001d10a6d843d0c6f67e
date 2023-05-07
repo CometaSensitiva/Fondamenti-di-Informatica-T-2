@@ -1,0 +1,6 @@
+package esempio4;
+
+public interface Complex {
+	public float getRealPart();
+	protected void setRealPart();
+}

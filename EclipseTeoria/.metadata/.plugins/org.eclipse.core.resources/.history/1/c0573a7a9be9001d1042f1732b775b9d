@@ -1,0 +1,11 @@
+package esempio3;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		Triangle t Triangle.of(5, 7, 9);
+		
+
+	}
+
+}

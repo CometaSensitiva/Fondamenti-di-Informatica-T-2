@@ -1,0 +1,29 @@
+package esempio5;
+
+public interface Complex {
+	
+	public static Complex of(double realPart, double imPart) {
+		return new ImplComplex(realPart, imPart);
+	}
+
+	public double getRealPart();
+
+	public double getImPart();
+
+	public Complex sum(Complex that);
+
+	public Complex sub(Complex that);
+
+	public Complex mul(Complex that);
+
+	public Complex div(Complex that);
+
+	public Complex cgt(Complex z);
+
+	public Complex divByFactor(double x);
+
+	public double squaredModule();
+
+	public String toString();
+
+}

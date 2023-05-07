@@ -1,0 +1,7 @@
+package esempio2;
+
+public class Tonno extends PesceDiMare {
+	public Tonno(String s)) {
+		super(s);
+	}
+}

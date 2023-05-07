@@ -1,0 +1,19 @@
+package esempio2;
+
+public abstract class AnimaleAcquatico extends Animale {
+
+	protected AnimaleAcquatico(String s) {
+		super(s);
+	}
+
+	@Override
+	public String vive() {
+		return "nell'acqua";
+	}
+
+	@Override
+	public String nome() {
+		return "un animale acquatico";
+	}
+
+}

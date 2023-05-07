@@ -1,0 +1,33 @@
+package esempio3;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		Triangle t = Triangle.of(5, 7, 9);
+		IsoscelesTriangle it = IsoscelesTriangle.of(7, 5);
+		EquilateralTriangle et = EquilateralTriangle.of(3);
+		RightTriangle rt = RightTriangle.of(3, 4);
+		RightIsoscelesTriangle rit = RightIsoscelesTriangle.of(1);
+	
+
+		System.out.println(t.toString());
+		System.out.println(it.toString());
+		System.out.println(et.toString());
+		System.out.println(rt.toString());
+		System.out.println(rit.toString());
+
+		Triangle tf = TriangleFactory.of(5, 7, 9);
+		Triangle itf = TriangleFactory.of(5, 5, 7);
+		Triangle etf = TriangleFactory.of(3, 3, 3);
+		Triangle rtf = TriangleFactory.of(3, 4, 5);
+		Triangle ritf = TriangleFactory.of(1, 1, Math.sqrt(2));
+		
+		System.out.println(tf.toString());
+		System.out.println(itf.toString());
+		System.out.println(etf.toString());
+		System.out.println(rtf.toString());
+		System.out.println(ritf.toString());
+
+	}
+
+}

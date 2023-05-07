@@ -1,0 +1,146 @@
+package esempio3;
+
+import java.util.Arrays;
+
+public class ImplQuadrilateral implements Quadrilateral, Shape {
+	public double a, b, c, d;
+	public double angleDAB, angleABC, angleBCD, angleCDA;
+
+	public ImplQuadrilateral(double a, double b, double c, double d, double angleDAB, double angleABC, double angleBCD, double angleCDA) throws IllegalArgumentException  {
+		
+		if()
+		
+		else 
+			throw new IllegalArgumentException("Cannot construct a triangle with the specified arguments");
+	}
+
+	public ImplQuadrilateral(double a, double b, double c, double d, double angleCDA) throws IllegalArgumentException {
+		if()
+			else 
+				throw new IllegalArgumentException("Cannot construct a triangle with the specified arguments");
+		
+	}
+
+	public boolean isValidQuadrilateral(double a, double b, double c, double d, double angleDAB, double angleABC,
+			double angleBCD, double angleCDA) {
+		return arePositiveSides(a,b,c,d) && !isValidTriangleInequality(a,b,c,d) && !areValidAngles(angleDAB,angleABC,angleBCD,angleCDA);
+			
+
+	}
+
+	public boolean arePositiveSides(double a, double b, double c, double d) {
+		return a > 0 && b > 0 && c > 0 && d > 0;
+	}
+
+	public boolean isValidTriangleInequality(double a, double b, double c, double d) {
+		return a > b + c + d && b > a + c + d && c > a + b + d && d > a + b + c;
+	}
+
+	public boolean areValidAngles(double angleDAB, double angleABC, double angleBCD, double angleCDA) {
+		return (angleDAB < Math.PI && angleABC < Math.PI && angleBCD < Math.PI && angleCDA < Math.PI)
+				&& (angleDAB + angleABC + angleBCD + angleCDA) < 2 * Math.PI;
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getPerimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getSide1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getSide2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getSide3() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getSide4() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getDiagonal1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getDiagonal2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getHeight1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getHeight2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAngle1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAngle2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAngle3() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAngle4() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double isConcave() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double isConvex() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,37 @@
+package esempio3;
+
+/**
+ * This interface represents an isosceles triangle, which extends the Triangle
+ * interface. An isosceles triangle has two equal sides and two equal angles.
+ *
+ * @author michelemazzaa
+ */
+public interface TriangleIsosceles extends Triangle {
+
+	/**
+	 * Returns a new instance of an isosceles triangle with the specified base and
+	 * sides.
+	 *
+	 * @param base  the length of the base of the isosceles triangle
+	 * @param sides the length of the two equal sides of the isosceles triangle
+	 * @return a new instance of an isosceles triangle with the specified base and
+	 *         sides
+	 */
+	public static IsoscelesTriangle of(double base, double sides) {
+		return new ImplTriangleIsosceles(base, sides);
+	}
+
+	/**
+	 * Returns the length of the base of this isosceles triangle.
+	 *
+	 * @return the length of the base of this isosceles triangle
+	 */
+	public double getBase();
+
+	/**
+	 * Returns the length of the equal sides of this isosceles triangle.
+	 *
+	 * @return the length of the equal sides of this isosceles triangle
+	 */
+	public double getSide();
+}

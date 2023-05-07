@@ -1,0 +1,12 @@
+package esempio2;
+
+public class Main2 {
+	public static void main(String[] args) {
+		Libro libroJava = new Libro(22, 16, 3);
+		Tavolo tavoloCucina = new Tavolo(120, 70, 74);
+		Appezzamento terreno = new Appezzamento(21, 50, "44.49179603211135, 11.330909770799916");
+		System.out.println(MyMath.area(libroJava));
+		System.out.println(MyMath.area(tavoloCucina));
+		System.out.println(MyMath.area(terreno));
+	}
+}

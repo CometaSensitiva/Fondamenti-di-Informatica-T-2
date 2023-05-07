@@ -1,0 +1,15 @@
+package esempio3;
+
+public class ImplTriangleRectangle extends ImplTriangle implements TriangleRectangle {
+	public ImplTriangleRectangle(double Catete1, double Catete2) {
+		
+		super(Catete1, Catete2, )
+	}
+
+	public double getCateteMinor() {
+		if (getSide1() > getSide2())
+			return getSide1();
+		else
+			return getSide2();
+	}
+}

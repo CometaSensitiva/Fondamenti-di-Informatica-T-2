@@ -1,0 +1,6 @@
+package esempio2;
+
+public interface Rettangolare {
+	public double larghezza();
+	public double lunghezza();
+}

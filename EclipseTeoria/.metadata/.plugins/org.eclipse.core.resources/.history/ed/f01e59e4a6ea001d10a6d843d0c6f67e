@@ -1,0 +1,64 @@
+package esempio3test;
+
+import esempio3.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+
+public class QuadrilateralTest {
+
+	@Test
+	public void testGetters() {
+		// Create a new instance of a convex quadrilateral
+		Quadrilateral quad = Quadrilateral.of(3, 4, 5, 6, 90, 90, 90, 90);
+
+		// Test the getters for the side lengths
+		assertEquals(3, quad.getSide1(), 0);
+		assertEquals(4, quad.getSide2(), 0);
+		assertEquals(5, quad.getSide3(), 0);
+		assertEquals(6, quad.getSide4(), 0);
+
+		// Test the getters for the diagonal lengths
+		assertEquals(Math.sqrt(34), quad.getDiagonal1(), 0);
+		assertEquals(Math.sqrt(61), quad.getDiagonal2(), 0);
+
+		// Test the getters for the angle measures
+		assertEquals(Math.PI / 2, quad.getAngle1(), 0.0001);
+		assertEquals(Math.PI / 2, quad.getAngle2(), 0.0001);
+		assertEquals(Math.PI / 2, quad.getAngle3(), 0.0001);
+		assertEquals(Math.PI / 2, quad.getAngle4(), 0.0001);
+
+		// Test the convex and concave methods
+		assertTrue(quad.isConvex());
+		assertFalse(quad.isConcave());
+	}
+
+	@Test
+	public void testOfConcave() {
+		// Create a new instance of a concave quadrilateral
+		Quadrilateral quad = Quadrilateral.ofConcave(2, 3, 4, 5, Math.PI * 5 / 6);
+
+		// Test the getters for the side lengths
+		assertEquals(2, quad.getSide1(), 0);
+		assertEquals(3, quad.getSide2(), 0);
+		assertEquals(4, quad.getSide3(), 0);
+		assertEquals(5, quad.getSide4(), 0);
+
+		// Test the getters for the diagonal lengths
+		assertEquals(Math.sqrt(29), quad.getDiagonal1(), 0);
+		assertEquals(Math.sqrt(10), quad.getDiagonal2(), 0);
+
+		// Test the getters for the angle measures
+		assertEquals(Math.PI / 6, quad.getAngle1(), 0.0001);
+		assertEquals(Math.PI / 3, quad.getAngle4(), 0.0001);
+
+		// Test the convex and concave methods
+		assertFalse(quad.isConvex());
+		assertTrue(quad.isConcave());
+	}
+
+}

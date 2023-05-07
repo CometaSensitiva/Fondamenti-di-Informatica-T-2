@@ -1,0 +1,6 @@
+package esempio3;
+
+public interface Triangolo {
+	public double area(double a, double b, double c);
+	public double perimeter();
+}

@@ -1,0 +1,13 @@
+package myfitnessdiary.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyFitnessDiary {
+	private List<Workout> workouts;
+
+	public MyFitnessDiary() {
+		this.workouts = new ArrayList<>();
+	}
+
+}

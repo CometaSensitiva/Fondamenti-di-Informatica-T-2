@@ -1,0 +1,5 @@
+package esempio3;
+
+public interface RightIsoscelesTriangle extends RightTriangle, IsoscelesTriangle {
+
+}

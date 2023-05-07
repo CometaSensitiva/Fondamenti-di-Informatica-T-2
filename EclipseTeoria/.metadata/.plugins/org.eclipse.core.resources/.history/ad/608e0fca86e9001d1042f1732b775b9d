@@ -1,0 +1,16 @@
+package esempio3;
+
+public class ImplEquilateralTriangle extends ImplTriangleIsosceles implements TriangleEquilateral {
+	public ImplEquilateralTriangle(double side) {
+		super(side, side);
+	}
+
+	public double getSide() {
+		return getSide1();
+	}
+
+	public double getHeight() {
+		return getHeight1();
+	}
+
+}

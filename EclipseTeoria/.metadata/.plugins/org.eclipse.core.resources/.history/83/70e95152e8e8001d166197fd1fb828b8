@@ -1,0 +1,8 @@
+package esempio1;
+
+public class Main1 {
+	public static void main(String[] args) {
+		double nan = Double.NaN;
+		double plusInf = Double.POSITIVE_INFINITY;
+	}
+}

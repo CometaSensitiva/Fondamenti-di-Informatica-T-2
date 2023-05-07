@@ -1,0 +1,41 @@
+package esempio3;
+
+/**
+ * A class representing an isosceles triangle shape. This class extends the
+ * 'Triangolo' class and overrides the 'nome' method to return the name of the
+ * isosceles triangle shape.
+ */
+public class TriangoloIsoscele extends Triangolo {
+
+	public TriangoloIsoscele(double base, double lato) {
+		super(base, lato, lato);
+	}
+
+	public double getBase() {
+		return getLatoA();
+	}
+
+	public double getLato1() {
+		return getLatoB();
+	}
+
+	public double getLato2() {
+		return getLatoC();
+	}
+	
+	
+	/**
+	 * Calculates the perimeter of the triangle.
+	 *
+	 * @return The perimeter of the triangle.
+	 */
+	@Override
+	public double perimetro() {
+		super.perimetro();
+	}
+	
+	@Override
+	public String nome() {
+		return "Triangolo isoscele";
+	}
+}

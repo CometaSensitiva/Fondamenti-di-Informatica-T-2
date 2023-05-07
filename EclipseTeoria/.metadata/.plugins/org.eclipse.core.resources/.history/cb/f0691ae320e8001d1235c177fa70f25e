@@ -1,0 +1,7 @@
+package esempio2;
+
+public class MyMath {
+	public static double area(Rettangolare r) {
+		return r.larghezza() * r.lunghezza();
+	}
+}

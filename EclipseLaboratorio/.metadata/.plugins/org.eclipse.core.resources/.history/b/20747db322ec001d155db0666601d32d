@@ -1,0 +1,6 @@
+package myfitnessdiary.model;
+
+public class Workout {
+	private Activity activity;
+	
+}

@@ -1,0 +1,39 @@
+package esempio7;
+
+import java.util.Arrays;
+
+/**
+ * 
+ * The Main7 class tests the Counter class by creating two Counter objects, c1
+ * and c2, and performing comparison operations on them.
+ */
+public class Main7 {
+
+	public static void main(String[] args) {
+		Counter c1 = new Counter(10);
+		Counter c2 = new Counter(10);
+
+// Compares c1 with c2 using compareTo method and prints the result
+		System.out.println("c1 vs c2 : " + c1.compareTo(c2));
+
+// Compares if c1 is equal to c2 using equals method and prints the result
+		System.out.println("c1 == c2 : " + c1.equals(c2));
+
+// Increments c1 and compares it with c2 using compareTo method and prints the result
+		c1.inc();
+		System.out.println("c1 vs c2 : " + c1.compareTo(c2));
+
+// Compares c2 with c1 using compareTo method and prints the result
+		System.out.println("c2 vs c1 : " + c2.compareTo(c1));
+
+// Compares if c1 is equal to c2 using equals method and prints the result
+		System.out.println("c1 == c2 : " + c1.equals(c2));
+
+		Counter[] myCounterArray = { new Counter(110), new Counter(100), new Counter(30), new Counter(50) };
+		for (Counter c : myCounterArray)
+			System.out.println(c);
+		Arrays.sort(myCounterArray);
+		for (Counter c : myCounterArray)
+			System.out.println(c);
+	}
+}

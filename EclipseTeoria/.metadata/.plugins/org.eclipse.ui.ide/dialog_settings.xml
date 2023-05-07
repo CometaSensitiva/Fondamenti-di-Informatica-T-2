@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/michelemazza/WorkSpaceEclipse/EclipseTeoria/12 Sistemi a oggetti"/>
+			<item value="/Users/michelemazza/WorkSpaceEclipse/EclipseTeoria/11 Formati e internazionalizzazione"/>
+			<item value="/Users/michelemazza/WorkSpaceEclipse/EclipseTeoria/10 Date"/>
+			<item value="/Users/michelemazza/WorkSpaceEclipse/EclipseTeoria/09 Enumerativi"/>
+			<item value="/Users/michelemazza/WorkSpaceEclipse/EclipseTeoria/07 Array"/>
+			<item value="/Users/michelemazza/WorkSpaceEclipse/EclipseTeoria/05 Riferimenti"/>
+			<item value="/Users/michelemazza/WorkSpaceEclipse/EclipseTeoria/04 Classi e oggetti"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="658"/>
+		<item key="DIALOG_Y_ORIGIN" value="356"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="540"/>
+		<item key="DIALOG_HEIGHT" value="367"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="org.eclipse.ui.internal.views.markers.FiltersConfigurationDialog">
+	</section>
+</section>

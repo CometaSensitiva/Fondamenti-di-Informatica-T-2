@@ -1,0 +1,51 @@
+package esempio3;
+
+/**
+ * A factory for creating different types of triangles based on their side
+ * lengths.
+ */
+public interface TriangleFactory {
+
+	/**
+	 * Creates a triangle with the specified side lengths.
+	 *
+	 * @param side1 the length of the first side
+	 * @param side2 the length of the second side
+	 * @param side3 the length of the third side
+	 * @return a triangle object
+	 * @throws IllegalArgumentException if any of the side lengths are not positive
+	 */
+	public static Triangle of(double side1, double side2, double side3) {
+		if (Double.compare(side1, side2) == 0 && Double.compare(side2, side3) == 0) // check for equilateral triangle
+			return new ImplEquilateralTriangle(side1);
+		else if (Math.pow(side2, 2) + Math.pow(side3, 2) == Math.pow(side1, 2) && Double.compare(side1, side2) == 0 )
+			return RightIsoscelesTriangle.of(side2);
+		else if (Math.pow(side1, 2) + Math.pow(side3, 2) == Math.pow(side2, 2) && Double.compare(side1, side3) == 0 )
+			return RightIsoscelesTriangle.of(side1);
+		else if (Math.pow(side1, 2) + Math.pow(side2, 2) == Math.pow(side3, 2) && Double.compare(side1, side2) == 0 )
+			return RightIsoscelesTriangle.of(side1);
+		else if (Math.pow(side1, 2) + Math.pow(side2, 2) == Math.pow(side3, 2)) // check for right triangle
+			return RightTriangle.of(side1, side2);
+		else if (Math.pow(side1, 2) + Math.pow(side3, 2) == Math.pow(side2, 2))
+			return RightTriangle.of(side1, side3);
+		else if (Math.pow(side2, 2) + Math.pow(side3, 2) == Math.pow(side1, 2))
+			return RightTriangle.of(side2, side3);
+		else if (side1 == side2 || side1 == side3 || side2 == side3) { // check for isosceles triangle
+			double base = 0;
+			double sides = 0;
+			if (side1 == side2) {
+				base = side3;
+				sides = side1;
+			} else if (side1 == side3) {
+				base = side2;
+				sides = side1;
+			} else {
+				base = side1;
+				sides = side2;
+			}
+			return IsoscelesTriangle.of(base, sides);
+		} else { // if no other condition is met, it must be a scalene triangle
+			return Triangle.of(side1, side2, side3);
+		}
+	}
+}

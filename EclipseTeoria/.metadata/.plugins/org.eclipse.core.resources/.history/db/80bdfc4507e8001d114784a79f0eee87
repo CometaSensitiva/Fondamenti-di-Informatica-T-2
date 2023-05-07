@@ -1,0 +1,7 @@
+package esempio3;
+
+public class TriangoloEquilatero extends TriangoloIsoscele {
+	public TriangoloEquilatero(double lato) {
+		super(lato,lato);
+	}
+}

@@ -1,0 +1,11 @@
+package esempio3;
+
+public interface Forma {
+	public double area();
+
+	public double perimeter();
+
+	public String nome();
+
+	public String toString();
+}

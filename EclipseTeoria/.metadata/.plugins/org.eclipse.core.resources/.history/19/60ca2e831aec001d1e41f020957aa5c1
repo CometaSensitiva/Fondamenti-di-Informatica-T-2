@@ -1,0 +1,33 @@
+package esempio3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main3 {
+	public static void main(String[] args) {
+		System.out.println("- - - - - Vecchie collection con raw types - - - - -");
+		List list = new ArrayList();
+		list.add(23);
+		list.add(24);
+		list.add(25);
+		for (Object obj : list)
+			System.out.println(obj);
+		int i0 = (int) list.get(0);
+		int i1 = (int) list.get(1);
+		int i2 = (int) list.get(2);
+		System.out.println(i0);
+		System.out.println(i1);
+		System.out.println(i2);
+		System.out.println("- - - - - Moderne collection con generic types - - - - -");
+		List<Number> listOfInt = new ArrayList<>();
+		listOfInt.add(23);
+		listOfInt.add(24);
+		listOfInt.add(25);
+		for (Number num : listOfInt)
+			System.out.println(num);
+		int i0 = listOfInt.get(0);
+		int i1 = listOfInt.get(1);
+		int i2 = listOfInt.get(2);
+
+	}
+}

@@ -1,0 +1,20 @@
+package esempio2;
+
+public abstract class Animale {
+	private String mioNome;
+	protected String verso;
+
+	protected Animale(String s) {
+		mioNome = s;
+	}
+
+	public abstract String siMuove();
+
+	public abstract String vive();
+
+	public abstract String nome();
+
+	public  void mostra() {
+		System.out.println(mioNome + ", " + nome() + ", " + verso +", si muove " + siMuove() + " e vive " + vive()); 
+	}
+}

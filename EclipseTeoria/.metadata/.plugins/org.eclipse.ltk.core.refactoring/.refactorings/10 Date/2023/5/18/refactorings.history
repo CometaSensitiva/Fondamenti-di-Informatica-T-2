@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;compleanno.Compleanno.java&apos; to &apos;BirthdayCalculator.java&apos;&#x0A;- Original project: &apos;10 Date&apos;&#x0A;- Original element: &apos;compleanno.Compleanno.java&apos;&#x0A;- Renamed element: &apos;compleanno.BirthdayCalculator.java&apos;" description="Rename compilation unit &apos;Compleanno.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;compleanno{Compleanno.java" name="BirthdayCalculator.java" references="false" stamp="1682953275907" version="1.0"/>
+</session>

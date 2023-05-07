@@ -1,0 +1,29 @@
+package esempio3;
+
+public interface Triangle extends Shape{
+	
+	public static Triangle of(double side1, double side2, double side3) {
+		return ImplTriangle()
+	}
+	public double side1();
+	
+	public double side2();
+	
+	public double side3();
+	
+	public double angleOppositeSide1();
+	
+	public double angleOppositeSide2();
+	
+	public double angleOppositeSide3();
+	
+	public double height1();
+	
+	public double height2();
+	
+	public double height3();
+	
+
+	
+
+}

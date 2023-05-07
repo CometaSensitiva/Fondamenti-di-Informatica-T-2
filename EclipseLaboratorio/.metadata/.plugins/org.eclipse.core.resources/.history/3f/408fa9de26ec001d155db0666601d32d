@@ -1,0 +1,39 @@
+package myfitnessdiary.model;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyFitnessDiary {
+	private List<Workout> workouts;
+
+	public MyFitnessDiary() {
+		this.workouts = new ArrayList<>();
+	}
+
+	public void addWorkout(Workout wo) {
+		this.workouts.add(wo);
+	}
+
+	public int getDayWorkoutCalories(LocalDate date) {
+		// TODO
+	}
+
+	public int getDayWorkoutMinutes(LocalDate date) {
+		// TODO
+	}
+
+	public List<Workout> getDayWorkouts(LocalDate date) {
+		// TODO
+	}
+
+	public int getWeekWorkoutCalories(LocalDate date) {
+	}
+
+	public int getWeekWorkoutMinutes(LocalDate date) {
+	}
+	
+	public List<Workout> getWeekWorkouts(LocalDate date) {
+		// TODO
+	}
+}

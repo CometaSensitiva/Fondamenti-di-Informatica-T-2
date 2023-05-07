@@ -1,0 +1,7 @@
+package esempio6;
+
+public class ImplStudenteLavoratore extends LoStudente implements StudenteLavoratore {
+
+	private String impiego;
+	private double stipendio;
+}

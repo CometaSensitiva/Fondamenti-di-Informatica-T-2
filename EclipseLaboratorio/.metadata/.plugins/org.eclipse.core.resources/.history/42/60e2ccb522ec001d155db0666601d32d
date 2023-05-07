@@ -1,0 +1,8 @@
+package myfitnessdiary.model;
+
+public class Workout {
+	private Activity activity;
+	private LocalDate date;
+	private int duration;
+	private Intensity intensity;
+}

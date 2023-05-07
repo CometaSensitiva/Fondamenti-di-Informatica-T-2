@@ -1,0 +1,15 @@
+package esempio2;
+
+public abstract class Animale {
+	private String mioNome;
+	protected String verso;
+	
+	protected Animale(String s) {
+		mioNome=s;
+	}
+	
+	public abstract String siMuove();
+	
+	public abstract String vive();
+	
+}

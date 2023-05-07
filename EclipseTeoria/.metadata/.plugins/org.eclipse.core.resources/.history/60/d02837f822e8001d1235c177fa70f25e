@@ -1,0 +1,21 @@
+package esempio2;
+
+public class Appezzamento implements Rettangolare {
+	private double larghezza, lunghezza;
+
+	public Appezzamento(double larghezza, double lunghezza) {
+		this.larghezza = larghezza;
+		this.lunghezza = lunghezza;
+	}
+
+	@Override
+	public double larghezza() {
+		return larghezza;
+	}
+
+	@Override
+	public double lunghezza() {
+		return lunghezza;
+	}
+
+}

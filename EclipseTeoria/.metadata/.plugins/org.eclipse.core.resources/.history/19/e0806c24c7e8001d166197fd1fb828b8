@@ -1,0 +1,15 @@
+package esempio3;
+
+public interface Triangolo extends Forma{
+	
+	
+	public double height1();
+	
+	public double height2();
+	
+	public double height3();
+	
+	public double angleOppositeSide1();
+	
+	
+}

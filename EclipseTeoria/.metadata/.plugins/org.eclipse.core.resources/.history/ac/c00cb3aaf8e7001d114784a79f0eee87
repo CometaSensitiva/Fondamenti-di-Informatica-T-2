@@ -1,0 +1,5 @@
+package esempio2;
+
+public class Tonno extends PesceDiMare {
+
+}

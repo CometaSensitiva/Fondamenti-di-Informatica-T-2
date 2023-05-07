@@ -1,0 +1,20 @@
+package esempio3;
+
+/**
+ * Questa classe realizza il concetto geometrico di triangolo rettangolo
+ * isoscele definito dall'omonima interfaccia. Poiché fra classi non sussiste
+ * ereditarietà multipla, bisogna scegliere se derivare questa classe da
+ * ImplTriangoloRettangolo, da ImplTriangoloIsoscele, o - andando un livello più
+ * in alto - direttamente da ImplTriangolo. Solitamente si sceglie la classe che
+ * permette di riusare di più e riscrivere di meno: qui le due scelte sono
+ * sostanzialmente equivalenti. Poiché ImplTriangoloRettangolo fa forse
+ * operazioni un poco più complesse, mentre ImplTriangoloIsoscele rinomina solo
+ * dei lati, scegliamo di derivare dalla prima. Le operazioni definite dalla
+ * seconda devono quindi essere riscritte (duplicazione di codice).
+ * 
+ * @author michelemazza
+ *
+ */
+public interface RightIsoscelesTriangle extends RightTriangle, IsoscelesTriangle {
+
+}

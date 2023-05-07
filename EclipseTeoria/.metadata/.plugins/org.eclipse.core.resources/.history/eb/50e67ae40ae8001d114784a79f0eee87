@@ -1,0 +1,43 @@
+package esempio3;
+
+/**
+ * A main class that demonstrates the use of the 'Triangolo',
+ * 'TriangoloIsoscele' and 'TriangoloEquilatero' classes.
+ */
+public class Main3 {
+
+	/**
+	 * The main method.
+	 * 
+	 * @param args The command-line arguments.
+	 */
+	public static void main(String[] args) {
+		// Create a new equilateral triangle with side length 3.0
+		Triangolo t1 = new TriangoloEquilatero(3.0);
+		System.out.println(t1.nome()); // "Triangolo equilatero"
+		System.out.println("Lato 1: " + t1.getLato1()); // "3.0"
+		System.out.println("Lato 2: " + t1.getLato2()); // "3.0"
+		System.out.println("Base: " + t1.getBase()); // "3.0"
+		System.out.println("Altezza: " + t1.getAltezza()); // "2.598076211353316"
+		System.out.println("Angolo apice: " + t1.getAngoloApice()); // "60.0"
+
+		// Create a new isosceles triangle with base 4.0 and equal sides 3.0
+		Triangolo t2 = new TriangoloIsoscele(4.0, 3.0);
+		System.out.println(t2.nome()); // "Triangolo isoscele"
+		System.out.println("Lato 1: " + t2.getLato1()); // "3.0"
+		System.out.println("Lato 2: " + t2.getLato2()); // "3.0"
+		System.out.println("Base: " + t2.getBase()); // "4.0"
+		System.out.println("Altezza: " + t2.getAltezza()); // "2.6457513110645907"
+		System.out.println("Angolo apice: " + t2.getAngoloApice()); // "63.43494882292201"
+
+		// Create a new generic triangle with sides 5.0, 4.0 and 3.0
+		Triangolo t3 = new Triangolo(5.0, 4.0, 3.0);
+		System.out.println(t3.nome()); // "Triangolo"
+		System.out.println("Lato 1: " + t3.getLato1()); // "5.0"
+		System.out.println("Lato 2: " + t3.getLato2()); // "4.0"
+		System.out.println("Base: " + t3.getBase()); // "3.0"
+		System.out.println("Altezza: " + t3.getAltezza()); // "2.8284271247461903"
+		System.out.println("Angolo apice: N/A"); // A generic triangle has no apex angle
+	}
+
+}

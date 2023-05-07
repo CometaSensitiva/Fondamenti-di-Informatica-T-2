@@ -1,0 +1,5 @@
+package esempio6;
+
+public class ImplLavoratore extends ImplPersona implements Lavoratore {
+
+}

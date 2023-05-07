@@ -1,0 +1,74 @@
+package esempio5;
+
+public class ImplReal implements Real {
+	protected float re;
+
+	public ImplReal(float x) {
+		re = x;
+	}
+
+	@Override
+	public float getRealPart() {
+		return this.re;
+	}
+
+	@Override
+	public float getImPart() {
+		return 0;
+	}
+
+	public Complex sum(Complex z) {
+		return new ImplComplex(re + z.getRealPart(), z.getImPart());
+	}
+
+	public Complex sub(Complex z) {
+		return new ImplComplex(re - z.getRealPart(), z.getImPart());
+	}
+
+	public Complex mul(Complex z) {
+		return new ImplComplex(re * z.getRealPart(), re * z.getImPart());
+	}
+
+	public Complex div(Complex z) {
+		return new ImplComplex(re / z.getRealPart(), re / z.getImPart());
+	}
+
+	public Complex cgt() {
+		return this;
+	}
+
+	public Complex divByFactor(double x) {
+		return new ImplComplex(re / x);
+	}
+
+	@Override
+	public float squaredModule() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Real sum(Real x) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Real sub(Real x) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Real mul(Real x) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Real div(Real x) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

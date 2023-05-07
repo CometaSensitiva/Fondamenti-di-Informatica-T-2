@@ -1,0 +1,32 @@
+package esempio3;
+
+public interface Quadrilateral extends Shape {
+	public double getSide1();
+
+	public double getSide2();
+
+	public double getSide3();
+
+	public double getSide4();
+
+	public double getDiagonal1();
+
+	public double getDiagonal2();
+
+	public double getHeight1();
+
+	public double getHeight2();
+
+	public double getAngle1();
+
+	public double getAngle2();
+
+	public double getAngle3();
+
+	public double getAngle4();
+
+	public double isConcave();
+	
+	public double isConvex();
+	
+}

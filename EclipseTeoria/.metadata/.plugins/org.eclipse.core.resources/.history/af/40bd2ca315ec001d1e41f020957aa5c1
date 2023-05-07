@@ -1,0 +1,23 @@
+package esempio1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		List listOfObject = new ArrayList();
+		listOfObject.add(new Counter(10));
+		listOfObject.add("Ciao");
+		for (Object obj : listOfObject)
+			System.out.println(obj);
+		List listOfCounter = new ArrayList();
+		listOfCounter.add(new Counter(11));
+		listOfCounter.add("Ciao");
+		listOfCounter.add(new Counter(7));
+		// for (Counter u : listOfCounter) System.out.println(u); NO : Incompatible types
+		Counter c0=(Counter)listOfCounter.get(0);
+		
+	}
+
+}

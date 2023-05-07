@@ -1,0 +1,7 @@
+package esempio6;
+
+interface Lavoratore extends Persona {
+	public String impiego();
+
+	public double stipendio();
+}

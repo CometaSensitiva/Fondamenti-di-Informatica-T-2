@@ -1,0 +1,19 @@
+package introduzione;
+
+public class EsercizioRiassuntivoVariante {
+
+	public static void showArray(String[] v) {
+		for (String x : v)
+			System.out.print(x + " ");
+		System.out.println();
+	}
+	//Devo passargli io gli argomenti da linea di comando
+	//(Passami lo sdrogo che tengo i demoni in capa "Squid Game" Michele)
+	public static void main(String[] args) {
+		showArray(args);
+		java.util.Arrays.sort(args);
+		showArray(args);
+		int pos = java.util.Arrays.binarySearch(args, "Michele");
+		System.out.println("Cercato " + "Michele" + ": trovato alla posizione " + pos);
+	}
+}

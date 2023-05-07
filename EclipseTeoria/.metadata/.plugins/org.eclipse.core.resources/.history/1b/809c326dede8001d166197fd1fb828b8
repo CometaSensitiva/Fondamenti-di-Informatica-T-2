@@ -1,0 +1,32 @@
+package esempio3;
+
+/**
+ * An interface for right-angled triangles that extends the Triangle interface.
+ * Provides methods to get the lengths of the two legs and the hypotenuse of the
+ * triangle.
+ * 
+ * @author michelemazzaa
+ */
+public interface TriangleRectangle extends Triangle {
+
+	/**
+	 * Returns the length of the first leg (catet1) of the right-angled triangle.
+	 * 
+	 * @return the length of the first leg (catet1) of the right-angled triangle
+	 */
+	public double getCatete1();
+
+	/**
+	 * Returns the length of the second leg (catet2) of the right-angled triangle.
+	 * 
+	 * @return the length of the second leg (catet2) of the right-angled triangle
+	 */
+	public double getCatete2();
+
+	/**
+	 * Returns the length of the hypotenuse of the right-angled triangle.
+	 * 
+	 * @return the length of the hypotenuse of the right-angled triangle
+	 */
+	public double getHypotenuse();
+}

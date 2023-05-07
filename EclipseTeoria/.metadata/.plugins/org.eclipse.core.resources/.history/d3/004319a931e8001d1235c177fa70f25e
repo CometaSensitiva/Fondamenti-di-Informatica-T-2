@@ -1,0 +1,44 @@
+package esempio2;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class FormattazioneDiPercentuali {
+	public static void main(String[] args) {
+		double p = 0.4312;
+		double q = 0.7;
+		double r = 1.2345678;
+		
+		NumberFormat formattatoreNumerico1 = NumberFormat.getPercentInstance();
+
+		
+		formattatoreNumerico1.setMaximumFractionDigits(2);
+		System.out.println("Default locale");
+		System.out.println(formattatoreNumerico1.format(p));
+		System.out.println(formattatoreNumerico1.format(q));
+		System.out.println(formattatoreNumerico1.format(r));
+		System.out.println();
+
+		// Creo un formattatore numerico in base allo standard del Canada
+		NumberFormat formattatoreNumerico2 = NumberFormat.getPercentInstance(Locale.CANADA);
+
+		// Setto le cifre decimali massime a 2
+		formattatoreNumerico2.setMaximumFractionDigits(2);
+		System.out.println("Canada locale");
+		System.out.println(formattatoreNumerico2.format(p));
+		System.out.println(formattatoreNumerico2.format(q));
+		System.out.println(formattatoreNumerico2.format(r));
+		System.out.println();
+
+		// Creo un formattatore numerico in base allo standard del Canada francese
+		NumberFormat formattatoreNumerico3 = NumberFormat.getPercentInstance(Locale.CANADA_FRENCH);
+
+		// Setto le cifre decimali massime a 2
+		formattatoreNumerico3.setMaximumFractionDigits(2);
+		System.out.println("Canada Francese locale");
+		System.out.println(formattatoreNumerico3.format(p));
+		System.out.println(formattatoreNumerico3.format(q));
+		System.out.println(formattatoreNumerico3.format(r));
+		System.out.println();
+	}
+}

@@ -1,0 +1,10 @@
+package myfitnessdiary.model;
+
+import java.time.LocalDate;
+
+public class Workout {
+	private Activity activity;
+	private LocalDate date;
+	private int duration;
+	private Intensity intensity;
+}

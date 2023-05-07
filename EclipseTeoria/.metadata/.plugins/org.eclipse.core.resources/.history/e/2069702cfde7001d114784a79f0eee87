@@ -1,0 +1,13 @@
+package esempio3;
+
+public abstract class Forma {
+	public abstract double area();
+
+	public abstract double perimetro();
+
+	public abstract String nome();
+
+	public String toString() {
+		return nome() + " di area " + area() + " e perimetro " + perimetro();
+	}
+}

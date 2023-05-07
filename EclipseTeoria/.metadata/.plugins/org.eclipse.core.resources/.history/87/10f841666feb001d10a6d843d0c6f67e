@@ -1,0 +1,15 @@
+package esempio9;
+
+import java.util.Comparator;
+import java.text.Normalizer;
+
+public class PersonaCognomeCognomeAlphabeticalComparator implements Comparator<Persona> {
+
+	@Override
+	public int compare(Persona p1, Persona p2) {
+		String s1 = Normalizer.normalize(p1.cognome().toLowerCase(), Normalizer.Form.NFD);
+		String s2 = Normalizer.normalize(p2.cognome().toLowerCase(), Normalizer.Form.NFD);
+		return s1.compareTo(s2);
+	}
+
+}

@@ -1,0 +1,10 @@
+package esempio2;
+
+public abstract class Elefante extends AnimaleTerrestre {
+
+	@Override
+	public String siMuove() {
+		return "camminando";
+	}
+
+}

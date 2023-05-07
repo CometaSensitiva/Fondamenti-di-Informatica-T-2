@@ -1,0 +1,11 @@
+package esempio2;
+
+public abstract class AnimaleMarino extends AnimaleAcquatico {
+
+	@Override
+	public String siMuove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

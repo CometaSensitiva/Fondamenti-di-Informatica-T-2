@@ -1,0 +1,31 @@
+package esempio6;
+
+import java.time.LocalDateTime;
+
+public class ImplStudenteLavoratore extends ImplStudente implements StudenteLavoratore {
+
+	private String impiego;
+	private double stipendio;
+
+	public ImplStudenteLavoratore(String cognome, String nome, LocalDateTime dataDiNascita, String luogoDiNascita,
+			Esame[] esami, String impiego, double stipendio) {
+		super(cognome, nome, dataDiNascita, luogoDiNascita, esami);
+		this.impiego = impiego;
+		this.stipendio = stipendio;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + ", di mestiere fa il " + impiego() + " e guadagna € " + stipendio();
+	}
+
+	@Override
+	public String impiego() {
+		return impiego;
+	}
+
+	@Override
+	public double stipendio() {
+		return stipendio;
+	}
+}

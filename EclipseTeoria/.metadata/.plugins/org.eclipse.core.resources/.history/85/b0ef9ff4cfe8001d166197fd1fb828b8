@@ -1,0 +1,19 @@
+package esempio3;
+
+public class ImplTriangleIsosceles extends ImplTriangle implements TriangleIsosceles {
+
+	public ImplTriangleIsosceles(double base, double sides) {
+		super(base, sides, sides);
+	}
+
+	@Override
+	public double base() {
+		return getSide1();
+	}
+
+	@Override
+	public double side() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

@@ -1,0 +1,19 @@
+package esempio2;
+
+public abstract class AnimaleTerrestre extends Animale {
+
+	protected AnimaleTerrestre(String s) {
+		super(s);
+	}
+
+	@Override
+	public String vive() {
+		return "sulla terra ferma";
+	}
+
+	@Override
+	public String nome() {
+		return "un animale terrestre"; 
+	}
+
+}

@@ -1,0 +1,7 @@
+package esempio3;
+
+public interface TriangleIsosceles extends Triangle {
+	public static TriangleIsosceles of(double base, double sides) {
+		return new
+	}
+}

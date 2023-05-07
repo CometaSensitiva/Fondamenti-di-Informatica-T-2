@@ -1,0 +1,35 @@
+package esempio3;
+
+public class ImplRightIsoscelesTriangle extends ImplRightTriangle {
+	public ImplRightIsoscelesTriangle(double catete) {
+		super(catete, catete);
+	}
+
+	/**
+	 * Returns the length of the base of the Right Isosceles Triangle.
+	 *
+	 * @return The length of the base of the Right Isosceles Triangle.
+	 */
+	public double getBase() {
+		return getSide1();
+	}
+
+	/**
+	 * Returns the length of the two equal sides of the Right Isosceles Triangle.
+	 *
+	 * @return The length of the two equal sides of the Right Isosceles Triangle.
+	 */
+	public double getSide() {
+		return getSide2();
+	}
+
+	/**
+	 * Returns the name of the Right Isosceles Triangle.
+	 *
+	 * @return The name of the Right Isosceles Triangle.
+	 */
+	@Override
+	public String getName() {
+		return "A Right Isosceles Triangle";
+	}
+}

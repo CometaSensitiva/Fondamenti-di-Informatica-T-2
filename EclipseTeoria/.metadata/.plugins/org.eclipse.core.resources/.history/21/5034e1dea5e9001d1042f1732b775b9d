@@ -1,0 +1,56 @@
+package esempio3;
+
+/**
+ * A factory for creating instances of different types of triangles based on the
+ * sides provided.
+ */
+public interface TriangleFactory {
+
+	/**
+	 * Creates an instance of the appropriate triangle subclass based on the sides
+	 * provided.
+	 * 
+	 * @param side1 the length of the first side
+	 * @param side2 the length of the second side
+	 * @param side3 the length of the third side
+	 * @return an instance of the appropriate triangle subclass
+	 * @throws IllegalArgumentException if the sides provided do not form a valid
+	 *                                  triangle
+	 */
+	static Triangle of(double side1, double side2, double side3) {
+		// Check if the sides form a valid triangle
+		if (!Triangle.isTriangle(side1, side2, side3)) {
+			throw new IllegalArgumentException("The sides provided do not form a valid triangle");
+		}
+
+		// Check for equilateral triangle
+		if (Triangle.isEquilateral(side1, side2, side3)) {
+			return new ImplEquilateralTriangle(side1);
+		}
+
+		// Check for right triangles
+		if (Triangle.isRight(side1, side2, side3)) {
+			// Check for right isosceles triangle
+			if (Triangle.isIsosceles(side1, side2, side3)) {
+				double base = Triangle.getBase(side1, side2, side3);
+				double sides = Triangle.getLongestSide(side1, side2, side3);
+				return RightIsoscelesTriangle.of(base, sides);
+			} else {
+				// Right triangle that is not isosceles
+				double base = Triangle.getBase(side1, side2, side3);
+				double height = Triangle.getHeight(side1, side2, side3);
+				return RightTriangle.of(base, height);
+			}
+		}
+
+		// Check for isosceles triangle
+		if (Triangle.isIsosceles(side1, side2, side3)) {
+			double base = Triangle.getBase(side1, side2, side3);
+			double sides = Triangle.getNonBaseSide(side1, side2, side3);
+			return IsoscelesTriangle.of(base, sides);
+		}
+
+		// Scalene triangle
+		return Triangle.of(side1, side2, side3);
+	}
+}

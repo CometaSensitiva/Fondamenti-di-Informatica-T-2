@@ -1,0 +1,19 @@
+package esempio5;
+
+public class Main5 {
+	public static void main(String[] args) {
+	Real   r1 = Real.of(18.5),
+			r2 = Real.of(3.14);
+			Complex c1 = Complex.of(-16, 0), 
+			c2 = Complex.of(3, 2), 
+			c3 = Complex.of(0, -2);
+			Real   r = r1.sum(r2);    Complex c = c1.sum(c2);
+			System.out.println("r1 + r2 = " + r);    // il reale 21.64
+			System.out.println("c1 + c2 = " + c); // il complesso -13+2i
+			System.out.println("c1 + c2 -i = " + c.sub(new Complex(0,1))); 
+			c = c.sum(c3);
+			System.out.println("c + c3 = " + c);     // il complesso -13+0i 
+			c = r;
+			System.out.println("c = r; c = " + c);  
+	}
+}

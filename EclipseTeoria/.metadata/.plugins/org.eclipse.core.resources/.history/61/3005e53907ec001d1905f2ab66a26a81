@@ -1,0 +1,25 @@
+package esempio2;
+
+import java.util.OptionalDouble;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		OptionalDouble aliquota = OptionalDouble.of(8.6);
+
+		if (aliquota.isPresent()) {
+			System.out.println(aliquota.getAsDouble());
+		} else {
+			System.out.println("aliquota indefinita");
+		}
+
+		OptionalDouble detrazione = OptionalDouble.empty();
+		if (detrazione.isPresent()) {
+			System.out.println(detrazione.getAsDouble());
+		} else {
+			System.out.println("nessuna detrazione");
+		}
+
+	}
+
+}

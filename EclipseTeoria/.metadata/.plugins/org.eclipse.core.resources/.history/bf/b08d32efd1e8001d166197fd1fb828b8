@@ -1,0 +1,11 @@
+package esempio3;
+
+public interface Shape {
+	public double getArea();
+
+	public double getPerimeter();
+
+	public String getname();
+
+	public String toString();
+}

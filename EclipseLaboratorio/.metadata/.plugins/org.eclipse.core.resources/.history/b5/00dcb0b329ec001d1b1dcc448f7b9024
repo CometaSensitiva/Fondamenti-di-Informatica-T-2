@@ -1,0 +1,76 @@
+package myfitnessdiary.model;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyFitnessDiary implements FitnessDiary {
+	private List<Workout> workouts;
+
+	public MyFitnessDiary() {
+		this.workouts = new ArrayList<>();
+	}
+
+	public void addWorkout(Workout wo) {
+		this.workouts.add(wo);
+	}
+
+	//Optional?
+	public int getDayWorkoutCalories(LocalDate date) {
+		int calories = 0;
+		for (Workout wo : workouts) {
+			if (wo.getDate().equals(date))
+				calories += wo.getBurnedCalories();
+		}
+		return calories;
+	}
+
+	//Optional?
+	public int getDayWorkoutMinutes(LocalDate date) {
+		int minutes = 0;
+		for (Workout wo : workouts) {
+			if (wo.getDate().equals(date))
+				minutes += wo.getBurnedCalories();
+		}
+		return minutes;
+	}
+
+	//Optional?
+	public List<Workout> getDayWorkouts(LocalDate date) {
+		List<Workout> dayWorkouts = new ArrayList<>();
+		for (Workout wo : workouts) {
+			if (wo.getDate().equals(date))
+				dayWorkouts.add(wo);
+		}
+		return dayWorkouts;
+	}
+
+	public int getWeekWorkoutCalories(LocalDate date) {
+		List<Workout> weekWorkouts = new ArrayList<>();
+		int daysToSubtract = date.getDayOfWeek().getValue() - DayOfWeek.MONDAY.getValue();
+		LocalDate monday = date.minusDays(daysToSubtract);
+		LocalDateTime start = LocalDateTime.of(monday, LocalTime.of(0, 0));
+		LocalDateTime end = LocalDateTime.of(date.plusWeeks(1), LocalTime.of(0, 0));
+		for()
+	}
+
+	public int getWeekWorkoutMinutes(LocalDate date) {
+		// TODO
+	}
+
+	public List<Workout> getWeekWorkouts(LocalDate date) {
+		// TODO
+	}
+
+	private int calcCalories(List<Workout> woList) {
+		// TODO
+	}
+
+	private int calcMinutes(List<Workout> woList) {
+		// TODO
+	}
+
+}

@@ -1,0 +1,5 @@
+package esempio3;
+
+public class ImplTriangleEquilateral extends ImplTriangleIsosceles {
+
+}

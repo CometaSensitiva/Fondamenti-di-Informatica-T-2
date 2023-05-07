@@ -1,0 +1,42 @@
+package esempio2;
+
+/**
+ * Represents a plot of land that implements the {@link Rettangolare} interface.
+ * 
+ * @author michelemazza
+ */
+public class Appezzamento implements Rettangolare {
+
+	private double larghezza, lunghezza;
+
+	/**
+	 * Creates a new plot of land with the specified dimensions.
+	 *
+	 * @param larghezza the width of the plot of land
+	 * @param lunghezza the length of the plot of land
+	 */
+	public Appezzamento(double larghezza, double lunghezza) {
+		this.larghezza = larghezza;
+		this.lunghezza = lunghezza;
+	}
+
+	/**
+	 * Gets the width of the plot of land.
+	 *
+	 * @return the width of the plot of land
+	 */
+	@Override
+	public double larghezza() {
+		return larghezza;
+	}
+
+	/**
+	 * Gets the length of the plot of land.
+	 *
+	 * @return the length of the plot of land
+	 */
+	@Override
+	public double lunghezza() {
+		return lunghezza;
+	}
+}

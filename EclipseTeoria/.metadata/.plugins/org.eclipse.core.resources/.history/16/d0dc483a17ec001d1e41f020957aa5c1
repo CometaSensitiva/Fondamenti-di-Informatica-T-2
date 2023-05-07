@@ -1,0 +1,51 @@
+package esempio1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 
+ * This is the Main1 class that contains the main method to execute the program.
+ * 
+ * It demonstrates the usage of ArrayList and iterating over its elements.
+ * 
+ * @author michelemazzaa
+ */
+public class Main1 {
+
+	/**
+	 * 
+	 * The main method is the entry point of the program.
+	 * 
+	 * @param args the command-line arguments
+	 */
+	public static void main(String[] args) {
+		// Creating a new ArrayList to store objects
+		List listOfObject = new ArrayList();
+
+		// Adding a Counter object and a String to the list
+		listOfObject.add(new Counter(10));
+		listOfObject.add("Ciao");
+
+		// Iterating over the list and printing each element
+		for (Object obj : listOfObject) {
+			System.out.println(obj);
+		}
+
+		// Creating a new ArrayList to store Counter objects
+		List listOfCounter = new ArrayList();
+
+		// Adding Counter objects, a String, and another Counter object to the list
+		listOfCounter.add(new Counter(11));
+		listOfCounter.add("Ciao");
+		listOfCounter.add(new Counter(7));
+
+		// Retrieving and printing Counter objects from the list
+		Counter c0 = (Counter) listOfCounter.get(0);
+		System.out.println(c0);
+		Counter c1 = (Counter) listOfCounter.get(2);
+		System.out.println(c1);
+		Counter cX = (Counter) listOfCounter.get(1);
+		System.out.println(cX);
+	}
+}

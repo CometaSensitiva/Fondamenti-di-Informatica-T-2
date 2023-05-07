@@ -1,0 +1,95 @@
+package esempio3;
+
+public class ImplTriangleRectangle implements TriangleRectangle {
+
+	@Override
+	public double getSide1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getSide2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getSide3() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAngleOppositeSide1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAngleOppositeSide2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAngleOppositeSide3() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getHeight1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getHeight2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getHeight3() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getPerimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getNome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getCatete1() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getCatete2() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getHypotenuse() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

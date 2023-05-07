@@ -1,0 +1,16 @@
+package myfitnessdiary.controller;
+
+import java.time.LocalDate;
+
+public class MyController extends Controller {
+
+	public MyController(FitnessDiary diary, 
+ActivitiesRepository repository, ReportWriter reportWriter)
+
+	@Override
+	public String getDayWorkout(LocalDate data) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

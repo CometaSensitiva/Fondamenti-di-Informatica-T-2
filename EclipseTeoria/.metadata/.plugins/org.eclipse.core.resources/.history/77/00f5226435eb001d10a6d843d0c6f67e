@@ -1,0 +1,33 @@
+package esempio4;
+
+public class Main4 {
+
+	public static void main(String[] args) {
+		Complex c1 = Complex.of(1, 2);
+		Complex c2 = Complex.of(2, 3);
+
+		System.out.println("c1 = " + c1);
+		System.out.println("c2 = " + c2);
+
+		Complex c3 = c1.sum(c2);
+		System.out.println("c1 + c2 = " + c3);
+
+		Real r1 = Real.of(2);
+		Real r2 = Real.of(3);
+
+		System.out.println("r1 = " + r1);
+		System.out.println("r2 = " + r2);
+
+		Real r3 = r1.sum(r2);
+		System.out.println("r1 + r2 = " + r3);
+
+		// la seguente riga genera un errore di compilazione perché Real non ha il
+		// metodo divByFactor()
+		Complex c4 = c1.divByFactor(2);
+
+		Real r4 = r1.divByFactor(2);
+		System.out.println("r1 / 2 = " + r4);
+
+	}
+
+}

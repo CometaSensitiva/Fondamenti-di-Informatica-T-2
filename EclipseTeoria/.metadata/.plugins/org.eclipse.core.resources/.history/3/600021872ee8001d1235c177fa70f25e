@@ -1,0 +1,30 @@
+package introduzione;
+
+public class Esempio5 {
+	public static void main(String[] args) {
+		int[] v1 = { 1, 2, 3, 4 };
+		int[] v2 = java.util.Arrays.copyOf(v1, v1.length);
+		int[] v3 = java.util.Arrays.copyOf(v1, v1.length - 2);
+		int[] v4 = java.util.Arrays.copyOf(v1, 0);
+		int[] v5 = java.util.Arrays.copyOf(v1, v1.length + 2);
+		for (int x : v1)
+			System.out.print(x + " ");
+		System.out.println();
+		for (int x : v2) {
+			System.out.print(x + " ");
+		}
+		System.out.println();
+		for (int x : v3) {
+			System.out.print(x + " ");
+		}
+		System.out.println();
+		for (int x : v4) {
+			System.out.print(x + " ");
+		}
+		System.out.println();
+		for (int x : v5) {
+			System.out.print(x + " ");
+		}
+		System.out.println();
+	}
+}
