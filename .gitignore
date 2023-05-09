@@ -31,3 +31,8 @@
 # Miscellaneous
 *.swp
 *.DS_Store
+
+# Ignore .metadata in specific subdirectories
+**/EclipseEsercizi/.metadata/
+**/EclipseLaboratorio/.metadata/
+**/EclipseTeoria/.metadata/
