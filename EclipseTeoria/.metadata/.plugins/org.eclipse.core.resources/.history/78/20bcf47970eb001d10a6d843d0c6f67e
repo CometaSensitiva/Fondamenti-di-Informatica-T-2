@@ -1,7 +1,0 @@
-package esempio9;
-
-public class PersonaEtaAscendingComparator {
-	public int compare(Persona p1, Persona p2) {
-		return Integer.compare(p1.eta(), p2.eta());
-	}
-}

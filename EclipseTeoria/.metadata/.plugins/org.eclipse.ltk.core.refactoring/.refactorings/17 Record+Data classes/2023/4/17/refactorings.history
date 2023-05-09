@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;esempio1.Persona&apos; to &apos;PersonaRecord&apos;&#x0A;- Original project: &apos;17 Record+Data classes&apos;&#x0A;- Original element: &apos;esempio1.Persona&apos;&#x0A;- Renamed element: &apos;esempio1.PersonaRecord&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Persona&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;esempio1{Persona.java[Persona" matchStrategy="1" name="PersonaRecord" qualified="false" references="true" similarDeclarations="false" stamp="1682703300003" textual="false" version="1.0"/>
-</session>

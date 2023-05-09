@@ -1,7 +1,0 @@
-package esempio3;
-
-public class ImplTriangleIsosceles extends ImplTriangle {
-	public ImplTriangleIsosceles(double base, double sides) {
-		super(base, sides, sides);
-	}
-}

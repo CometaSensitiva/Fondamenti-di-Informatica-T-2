@@ -1,5 +1,0 @@
-package esempio3;
-
-public class ImplRightIsoscelesTriangle extends ImplRightTriangle {
-	public ImplRightIsoscelesTriangle()
-}

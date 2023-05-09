@@ -1,5 +1,0 @@
-package esempio4;
-
-public interface Real extends Complex {
-
-}

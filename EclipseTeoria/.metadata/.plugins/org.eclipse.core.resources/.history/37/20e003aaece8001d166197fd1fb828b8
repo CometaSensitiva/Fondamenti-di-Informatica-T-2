@@ -1,6 +1,0 @@
-package esempio2;
-
-public class BikeRent {
-	String città;
-	Optional<Duration> durataMax;
-}

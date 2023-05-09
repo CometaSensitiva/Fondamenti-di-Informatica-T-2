@@ -1,5 +1,0 @@
-package esempio6;
-
-interface StudenteLavoratore extends Studente, Lavoratore {
-	// interfaccia vuota! Definisce il tipo-intersezione
-}

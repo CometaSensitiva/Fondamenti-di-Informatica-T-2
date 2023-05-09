@@ -1,5 +1,0 @@
-package esempio9;
-
-public class PersonaCognomeCognomeAlphabeticalComparator implements Comparator<Persona> {
-
-}

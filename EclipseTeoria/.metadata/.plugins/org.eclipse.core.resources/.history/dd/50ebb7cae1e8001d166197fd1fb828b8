@@ -1,7 +1,0 @@
-package esempio3;
-
-public class ImplTriangleRectangle extends ImplTriangle implements TriangleRectangle {
-
-	
-
-}

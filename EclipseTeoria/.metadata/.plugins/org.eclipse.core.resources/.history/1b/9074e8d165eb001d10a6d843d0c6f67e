@@ -1,5 +1,0 @@
-package esempio8;
-
-public class CounterDescendingComparator implements Comparable<T> {
-
-}

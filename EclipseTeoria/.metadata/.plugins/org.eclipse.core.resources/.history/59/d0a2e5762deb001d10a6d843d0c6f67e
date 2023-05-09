@@ -1,7 +1,0 @@
-package esempio4;
-
-public interface Real extends Complex {
-	public static Real of(float x) {
-		return new ImplReal(x);
-	}
-}

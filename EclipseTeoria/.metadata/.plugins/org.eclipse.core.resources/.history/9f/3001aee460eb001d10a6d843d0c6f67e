@@ -1,7 +1,0 @@
-package esempio6;
-
-public class ImplStudenteLavoratore extends ImplStudente implements StudenteLavoratore {
-
-	private String impiego;
-	private double stipendio;
-}

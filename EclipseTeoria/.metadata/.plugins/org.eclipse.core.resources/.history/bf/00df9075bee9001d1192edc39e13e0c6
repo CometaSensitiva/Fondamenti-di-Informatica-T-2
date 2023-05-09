@@ -1,8 +1,0 @@
-package esempio3;
-
-public class ImplTriangleFactory implements TriangleFactory {
-	public static boolean approxEquals(double a, double b, double epsilon) {
-	    return Math.abs(a - b) < epsilon;
-	}
-
-}
