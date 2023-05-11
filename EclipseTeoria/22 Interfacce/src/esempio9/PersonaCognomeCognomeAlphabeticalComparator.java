@@ -25,11 +25,11 @@ public class PersonaCognomeCognomeAlphabeticalComparator implements Comparator<P
 	 */
 	@Override
 	public int compare(Persona p1, Persona p2) {
-// Normalize the last names to account for differences in diacritical marks and case sensitivity
+		// Normalize the last names to account for differences in diacritical marks and case sensitivity
 		String s1 = Normalizer.normalize(p1.cognome().toLowerCase(), Normalizer.Form.NFD).replaceAll("\\s", "");
 		String s2 = Normalizer.normalize(p2.cognome().toLowerCase(), Normalizer.Form.NFD).replaceAll("\\s", "");
 
-// Compare the normalized last names
+		// Compare the normalized last names
 		return s1.compareTo(s2);
 	}
 

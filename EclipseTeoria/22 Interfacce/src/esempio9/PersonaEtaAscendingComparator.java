@@ -22,7 +22,7 @@ public class PersonaEtaAscendingComparator implements Comparator<Persona> {
 	 */
 	@Override
 	public int compare(Persona p1, Persona p2) {
-// Compare the ages of the two Persona objects
+		// Compare the ages of the two Persona objects
 		return Integer.compare(p1.eta(), p2.eta());
 	}
 }

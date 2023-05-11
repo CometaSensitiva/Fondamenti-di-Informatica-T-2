@@ -11,7 +11,8 @@ import java.time.LocalDateTime;
  */
 public class Main6 {
 	public static void main(String[] args) {
-// Create an array of Person objects, containing instances of ImplPersona, ImplLavoratore, ImplStudente, and ImplStudenteLavoratore.
+		// Create an array of Person objects, containing instances of ImplPersona,
+		// ImplLavoratore, ImplStudente, and ImplStudenteLavoratore.
 		Persona[] persone = { new ImplPersona("Rossi", "Mario", LocalDateTime.of(1998, 12, 25, 13, 20), "Bologna"),
 				new ImplLavoratore("Neri", "Giacomo", LocalDateTime.of(1985, 2, 15, 11, 50), "Bologna", "lo chef",
 						50000),
