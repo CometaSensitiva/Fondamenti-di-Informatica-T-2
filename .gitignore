@@ -5,14 +5,14 @@
 .factorypath
 
 # Compiled output
-/bin/
+**/bin/
 /target/
 
 # Log files
 *.log
 
 # Build directories
-/bin/
+**/bin/
 /build/
 
 # Temporary files
