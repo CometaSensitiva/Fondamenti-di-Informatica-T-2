@@ -5,6 +5,7 @@
 .factorypath
 
 # Compiled output
+**.class
 **/bin/
 /target/
 
