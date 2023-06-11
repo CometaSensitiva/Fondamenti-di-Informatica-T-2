@@ -3,24 +3,23 @@ package zannotaxi.model;
 import java.time.LocalTime;
 
 public class FasciaOraria {
-	private LocalTime inizio;
-	private LocalTime fine;
-	private double costoScattoIniziale;
+	double costoScattoIniziale;
+	LocalTime inizio;
+	LocalTime fine;
 
-	public FasciaOraria(LocalTime inizio, LocalTime fine,
-			double costoScattoIniziale) {
+	public FasciaOraria(LocalTime inizio, LocalTime fine, double costoScattoIniziale) {
+		if (inizio.isAfter(fine) || inizio == null || fine == null) {
+			throw new IllegalArgumentException();
+		}
 		this.inizio = inizio;
 		this.fine = fine;
 		this.costoScattoIniziale = costoScattoIniziale;
 	}
 
 	public double getCostoScattoIniziale() {
-		return costoScattoIniziale;
-	}
-
-	public boolean contiene(LocalTime time) {
-		LocalTime onlyHoursAndMinutesTime = time.withSecond(0).withNano(0);
-		return inizio.compareTo(onlyHoursAndMinutesTime) <= 0 && 
-				onlyHoursAndMinutesTime.compareTo(fine) <= 0;
+		if (this.inizio.isAfter(LocalTime.of(6, 00)) && this.fine.isBefore(LocalTime.of(21, 59))) {
+			return 4.00F;
+		} else
+			return 6.00F;
 	}
 }
